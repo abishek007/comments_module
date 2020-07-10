@@ -22,6 +22,7 @@ class Comments extends Component {
     this.setState({ selectedCommentId: id })
   }
 
+  // Function To handle the Add Comment
   handleAddComment = () => {
     const { commentsArr, textAreaValue } = this.state
     const tempComments = commentsArr
@@ -37,6 +38,7 @@ class Comments extends Component {
     this.setState({ textAreaValue: "", commentsArr: tempComments })
   }
 
+  // Function To handle the Reply Comment
   handleAddReplyComment = () => {
     const { commentsArr, replyValue, selectedCommentId } = this.state
     const tempComments = commentsArr
